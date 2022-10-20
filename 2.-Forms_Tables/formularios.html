@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        El tag <form> es para que el usuario pueda poner informacion como en un formulario
+        y el atributo action="" es para que puedan mandarlo hacia otro URL , ademas
+        del atributo method="GET", este metodo manda la data al url de action
+    -->
+    <form action="resultados.html" method="GET">
+        <div>
+            <!--
+                el tag <label> es para que el tag <input> este unido solo a la descripcion
+                del label, mediante el atributo for="" y el id="", donde el contenido de estos
+                debe ser igual.
+                aparte el atributo name="", es lo que se mostrara en el nombre de la data
+            -->
+            <!--<div> para el usuario-->
+            <label for="Usser">Usuario</label> 
+            <input type="text" name="Usser" id="Usser" required/>
+        </div>
+        <br>
+        <div>
+            <!--<div> para la contraseña-->
+            <label for="Password">Contraseña</label> 
+            <input type="password" name="Password" id="Password" required/>
+        </div>
+        <br>
+        <div>
+            <!--<div> para el email-->
+            <label for="email">Ingresa tu email</label>
+            <input type="email" name="Email" id="email"/>
+        </div>
+        <br>
+        <div>
+            <!--<div> para la edad-->
+            <label for="edad">Ingresa tu edad</label>
+            <input type="number" name="Age" id="edad" min="0" max="100"/>
+        </div>
+        <br>
+        <div>
+            <!--<div> para la fecha de nacimiento-->
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="Date of Birth" id="nacimiento"/>
+        </div>
+        <br>
+        <div>
+            <!--<div> para los comentarios-->
+            <label for="Comentarios">Comentarios</label>
+            <textarea name="Comments" id="Comentarios" ></textarea>
+        </div>
+        <br>
+        <!--botones-->
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resultados</title>
+    </head>
+    <body>
+        <h2>Estos son los resultados</h2>
+        <div id="resultados"></div>
+        <br>
+        <a href="/2.-Forms_Tables/formularios.html">Volver al formulario</a>
+    </body>
+    <script>
+        //se posiciona en el id="resultados"
+        const resDiv=document.getElementById("resultados")
+        /*instancia un nuevo objeto location y con el search se obtiene la data
+        y con forEach recorre los datos obtenidos separandolos en valor y el nombre
+        */
+        new URLSearchParams(window.location.search).forEach((val,name) => {
+            //se agrega al div con el id="resultados", los strings y los saltos de linea
+            resDiv.append(`${name}:${val}`);
+            resDiv.append(document.createElement("br"));
+        })
+    </script>
+</html>
