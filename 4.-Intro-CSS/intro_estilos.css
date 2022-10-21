@@ -1,0 +1,54 @@
+/*ESTILOS PARA COLORES*/
+/*se inserta el color utilizando el nombre del color*/
+.colores{
+    color: orangered;
+}
+/*se inserta el color utilizando el valor hexadecimal de este*/
+.color-hexadecimal{
+    color: #1D8A99;
+}
+/*se inserta el color utilizando rgb(osea sus cantidades de red, green and blue)*/
+.color-rgb{
+    color: rgb(70, 20, 150)
+}
+/*se inserta el color utilizando rgba, con la diferencia que en este 
+se usa la opacidad(transparencia) del color(se mide del 1 al 0 en numeros flotantes)*/
+.color-rgba{
+    color: rgba(89, 150, 40, 0.5);
+}
+/*FONDOS*/
+.fondos{
+    /*se puede ingresar un fondo con un color especifico usando las distintas maneras
+    de nombrar un color*/
+    /* background-color: cornflowerblue; */
+    /*se usa un fondo utilizando la url de una imagen externa*/
+    background-image: url("https://d33wubrfki0l68.cloudfront.net/89a052ddc6d368ce93d9067e8444c36a3558efe7/f9e10/static/triangle_background2-6eded4a7ad80c007fb65f02c828e5dd0.jpg");
+    background-position: left center bottom;
+}
+.fondos-internos{
+    /* background-color: cornflowerblue; */
+    /*se usa un fondo utilizando la url de una imagen interna*/
+    background-image: url("imagenes/fondo.png");
+    background-position: left center bottom;
+}
+.ancho{
+    background-color: aquamarine;
+    /*ancho de la caja*/
+    width: 100px;
+}
+.alto{
+    background-color: #1D8A99;
+    /*altura de la caja*/
+    height: 200px;
+}
+.tarjeta{
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    /*el ancho del borde de la caja*/
+    border-width: 1px;
+    /*margen interno de la caja
+    el primero afecta verticalemente y el segundo horizontalmente*/
+    padding: 10px 20px;
+    /*margen externo de la caja con los demas elementos*/
+    margin: 10px 20px;
+}

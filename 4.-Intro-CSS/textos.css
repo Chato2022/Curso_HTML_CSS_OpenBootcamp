@@ -1,0 +1,12 @@
+/*Importando los estilos de texto de un url externa google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,300&display=swap');
+
+html{
+    /*el fount-family es el tipo de letra, por defecto CSS tiene algunas*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: larger;
+    /*es el volumen de la letra, a mas grande mas negrita*/
+    font-weight: 300;
+    /*el italic es el estilo de letra cursiva*/
+    font-style: italic;
+}

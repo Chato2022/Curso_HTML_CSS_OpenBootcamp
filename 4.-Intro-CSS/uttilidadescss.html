@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilidades CSS</title>
+    <!--formato estilos con un link propio de CSS-->
+    <link rel="stylesheet" href="estilos.css">
+    <!--enlace externo de formato de estilos CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.2.0/build/pure-min.css"/>
+    <!--definiendo el tag <style> y definiendo dentro del html los estilos-->
+    <style>
+        html{
+            padding: 15px;/*es para poner margen*/
+        }
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Hola</p>
+    <!--insertando un boton con un formato de estilo externo-->
+    <button class="pure-button">Esto es un boton</button>
+    <!--estilos in line
+    se agrega el atributo style y se define sus propiedades como en CSS
+    -->
+    <button style="padding: 10px; border: none; border-radius: 10px;">Boton Personalizado</button>
+</body>
+</html>

@@ -1,0 +1,41 @@
+h1{/*a los tag solo se les nombra*/
+    color: red;
+}
+
+/*Estoy probando colores y fuentes*/
+p{
+    color: blue;
+    font-size: 16pt;
+}
+/*
+al primero declarar que todos los parrrafos son de color azul,
+luego decir que el parrafo con id primer parrafo, tenga otro color,
+este lo pisa
+*/
+#primer_parrafo{/*los id usan #*/
+    color: aqua;
+    font-size: 15pt;
+}
+
+#segundo_parrafo{
+    font-size: 15pt;/*tamaño de letra*/
+    /*color: blueviolet;*/
+}
+/*
+al usar el (*) es que para todas las etiquetas que cumplan esa condicion
+y que no tengan la propiedad que se les va a pasar, se les pondra a todas estas
+*/
+*.warning{
+    color: red;
+}
+
+.encabezado{/*las clases usan .*/
+    font-size: 24pt;
+    text-transform: uppercase;
+}
+/*
+se declaran varias clases y id que resiviran esta propiedad
+*/
+.autor, .fecha, .ubicacion, h1, #segundo_parrafo{
+    text-decoration: underline;
+}
