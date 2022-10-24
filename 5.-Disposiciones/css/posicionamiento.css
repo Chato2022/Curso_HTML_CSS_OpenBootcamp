@@ -1,0 +1,42 @@
+/*los posicionamientos por defecto son estaticos, pero se cambian con la propiedad position
+y estos se mueven usando las propiedades rigth, left, top, bottom*/
+div{
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+}
+/*posicionamiento realtivo: permite moverlo en su entorno en realcion a su posicion original*/
+.relative{
+    position: relative;
+    left: 80px;
+    margin-left: 10px;
+}
+/*posicionamiento fixed: se posiciona en relación a la pantalla*/
+.fixed{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: aquamarine;
+    z-index: 10;/*con esto el elemento estara encima de los demás*/
+}
+/*posicionamiento absoluto: es mueve dentro de su padre*/
+.absolute{
+    position: absolute;
+    bottom: 0px; left: 40px;
+}
+
+.relative.contenedor{
+    width: 300px;
+    height: 500px;
+    background-color: blueviolet;
+}
+/*posicionamiento sticky: al mover el scroll modifica su posicionamiento
+una mezcla de relativo con fixed*/
+.sticky{
+    position: sticky;
+    background-color: darkkhaki;
+    color: white;
+    top: 0px;
+    z-index: 2;
+}

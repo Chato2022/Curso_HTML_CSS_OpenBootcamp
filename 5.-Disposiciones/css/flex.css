@@ -1,0 +1,29 @@
+.flex{
+    background-color: yellow;
+    height: 300px;
+    display: flex;/*Es una combinacion de float y position, pero el mas usado*/
+    flex-direction: column;/*por defecto el eje principal es el horizontal, pero con esta propiedad se puede cambiar*/
+    justify-content: space-around;/*permite mover a la caja en el eje horizontal*/
+    align-items:center;/*permite mover a las cajas en el eje vertical*/
+    /*flex-wrap:wrap;permite que el tamaño de las cajas no se deforme a pesar de achicar la pantalla*/
+
+}
+.contenido_1{
+    background-color: white;
+    /* height: 200px; */
+    width: 200px;
+    border: 1px solid blue;
+}
+.contenido_2{
+    background-color: white;
+    /* height: 200px; */
+    width: 200px;
+    border: 1px solid blue;
+}
+.contenido_3{
+    background-color:darksalmon;
+    /* height: 200px; */
+    width: 200px;
+    border: 1px solid blue;
+}
+

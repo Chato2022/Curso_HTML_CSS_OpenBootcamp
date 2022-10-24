@@ -1,0 +1,41 @@
+/*overflow: hidden --> sirve para ocultar el texto que a pasado el tamaño del contenedor*/
+.contenedor-hidden{
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    overflow: hidden;
+}
+/*overflow: scroll --> sirve para poder crear barras scroll tanto en el eje horizontal como vertical*/
+.contenedor-scroll{
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    overflow: scroll;
+}
+/*overflow: visible --> sirve para que cuando el texto pase el tamaño del contenedor, igual muestre su contenido*/
+.contenedor-visible{
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    overflow: visible
+}
+/*overflow: auto --> sirve para crear barras scroll, pero solo en el eje donde es necesario usar*/
+.contenedor-auto{
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    overflow: auto;
+}
+/*overflow-y u overflow-x --> sirve para ocultar(hidden) o mostrar(scroll) el scroll del eje que deseamos*/
+.contenedor-scroll-y{
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
